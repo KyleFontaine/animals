@@ -7,9 +7,14 @@ class Dog:
     attr2 = "dog"
  
     # A sample method 
-    def fun(self):
-        print("I'm a", self.attr1)
-        print("I'm a", self.attr2)
+    def Bark(self):
+        print('Woof from', self.name)
+        return self.name
 
-Fido = Dog("Cuddles")
-print(Fido.name)
+if __name__ == "__main__":
+        print("I'm called from Dog.py")
+        mydog = Dog("Fluffy")
+        name = mydog.Bark()
+        print(name)
+        #assert name == "Fluffy1"
+        assert name == "Fluffy"
